@@ -39,7 +39,7 @@ Built to demonstrate practical Windows Server Administartion, AD design, and inf
 ---
 
 ## Network Architecture
-...content...
+![alt text](/ScreenShot/image.png)
 
 ## Lab Environment
 ...content...

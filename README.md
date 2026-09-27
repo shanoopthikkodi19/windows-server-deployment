@@ -1,4 +1,4 @@
-![Windows Server](https://img.shields.io/badge/Windows_Server-2022-0078D6)
+![#Windows Server](https://img.shields.io/badge/Windows_Server-2022-0078D6)
 ![Active Directory](https://img.shields.io/badge/Active_Directory-Configured-brightgreen)
 ![DNS](https://img.shields.io/badge/DNS-Configured-brightgreen)
 ![IIS](https://img.shields.io/badge/IIS-SSL_Enabled-blue)

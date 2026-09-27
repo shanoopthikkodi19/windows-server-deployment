@@ -95,14 +95,5 @@ Each OU has a linked security group used for NTFS share permissions and Group Po
 
 ## Screenshots
 
-*(Add screenshots here as you build — ADUC OU view, GPO settings, IIS binding, SSL certificate details, mobile device enrollment)*
-
-```markdown
-![Network Architecture](../images/network-architecture.png)
-![OU Structure](../images/ou-structure.png)
-![SSL Certificate](../images/ssl-certificate.png)
-```
 
 ## Lessons Learned
-
-*(Fill in once complete — what you'd change for a production deployment, challenges hit, etc. This section is what makes the writeup read as real experience rather than a tutorial copy.)*

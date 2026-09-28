@@ -2,7 +2,7 @@
 
 ![Windows Server](https://img.shields.io/badge/WINDOWS_SERVER-2022-2ea44f?style=for-the-badge)
 ![Active Directory](https://img.shields.io/badge/ACTIVE_DIRECTORY-Configured-2ea44f?style=for-the-badge)
-![DNS](https://img.shields.io/badge/DHCP-CONFIGURED-2ea44f?style=for-the-badge)
+![DHCP](https://img.shields.io/badge/DHCP-CONFIGURED-2ea44f?style=for-the-badge)
 ![DNS](https://img.shields.io/badge/DNS-CONFIGURED-2ea44f?style=for-the-badge)
 ![IIS](https://img.shields.io/badge/IIS-SSL_Enabled-00244F?style=for-the-badge)
 ![SSL/TLS](https://img.shields.io/badge/SSL%2FTLS-Installed-2ea44f?style=for-the-badge)

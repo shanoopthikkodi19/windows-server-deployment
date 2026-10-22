@@ -1,0 +1,35 @@
+=================== Organization units added using powershell scripts===============
+
+
+
+Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
+
+Install-ADDSForest -DomainName "lab.shanoop.in" -CreateDnsDelegation:$false -DatabasePath "C:\Windows\NTDS" -LogPath "C:\Windows\NTDS" -SysvolPath "C:\Windows\SYSVOL" -Force:$true
+
+
+# 1. Create the Top-Level Finance Department OU
+New-ADOrganizationalUnit -Name "Finance" -Path "DC=hardening,DC=local" -Description "Finance Department Root" -ProtectedFromAccidentalDeletion $true
+
+# 2. Create the Users sub-OU inside Finance
+New-ADOrganizationalUnit -Name "Users" -Path "OU=Finance,DC=hardening,DC=local" -Description "Finance Department Staff Accounts" -ProtectedFromAccidentalDeletion $true
+
+# 3. Create the Computers sub-OU inside Finance
+New-ADOrganizationalUnit -Name "Computers" -Path "OU=Finance,DC=hardening,DC=local" -Description "Finance Department Workstations" -ProtectedFromAccidentalDeletion $true
+
+
+
+--------------------------------------------  communication through two subnet
+
+
+# 1. Create the Main Subnet (172.16.0.0/24)
+New-ADReplicationSubnet -Name "172.16.0.0/24" -Site "Default-First-Site-Name"
+
+# 2. Create the Finance Subnet (172.16.1.0/24)
+New-ADReplicationSubnet -Name "172.16.1.0/24" -Site "Default-First-Site-Name"
+
+
+# Create the Main Department OU
+New-ADOrganizationalUnit -Name "Main-Department" -Path "DC=lab,DC=shanoop,DC=in"
+
+# Create the Finance Department OU
+New-ADOrganizationalUnit -Name "Finance-Department" -Path "DC=lab,DC=shanoop,DC=in"
